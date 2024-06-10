@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!--Google Fonts-->
+
+    <!--Bootstrap-framework-->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!--Bootstrap-framework-->
+
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!--Font-Awesome-->
+
+    <!--Css-File-->
+    <link rel="stylesheet" href="Css/main.css">
+    <!--Css-File-->
+
+</head>
+<body>
+    
+
+<div class="container">
+    <h1 class= "pt-5 pb-5 text-center">Bookmarker</h1>
+
+    <div class="orange w-25 mx-auto">
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="title mt-3 d-flex justify-content-center">
+                    <i class="fa-solid fa-bookmark text-white"></i>
+                    <p class="fs-4">Bookmark your favorite sites</p>
+                    <i class="fa-solid fa-bookmark text-white"></i>
+            </div>
+
+                    <div class="Inputs">
+
+                        <div class="mb-3">
+
+                            <i class="fa-solid fa-book"></i>
+                            <label for="exampleFormControlInput1" class="form-label">Site Name</label>
+                            <input oninput="validWebsiteInput(this)" type="text" class="form-control mb-2" id="siteName" placeholder="Bookmark Name">
+                        </div>
+                        
+                        <div>
+                            <i class="fa-solid fa-link"></i>
+                            <label for="exampleFormControlInput1" class="form-label">Site URL</label>
+                            <input oninput="validWebsiteInput(this)" type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+                        </div>
+
+                            <div onclick="makeBook()" class="btn btn-colors mt-3 p-3 mb-5 fw-bold w-25 d-block mx-auto">Submit</div>
+
+                    </div>
+
+        </div>
+
+        
+    </div>
+
+                <div class="container">
+
+                    <div class="row">
+                    
+                        <table class="bg-danger mt-4 bg-white text-center">
+
+                            <thead class="text-dark">
+                                <th class="p-3">Index</th>
+                                <th class="p-3">Website Name</th>
+                                <th class="p-3">Visit</th>
+                                <th class="p-3">Delete</th>
+                            </thead>
+
+                        <tbody id="body">
+
+
+                        </tbody>
+
+                        </table>
+
+                    </div>
+                    
+                </div>
+        
+    </div>
+
+
+</div>
+
+
+<div class="container m-1">
+    <div class="row" id="Data">
+    
+    </div>
+
+</div>
+
+
+
+<script src="js/Script.js"></script>
+</body>
+</html>
